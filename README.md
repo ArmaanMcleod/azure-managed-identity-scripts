@@ -17,8 +17,8 @@ Have a look at [MSDN](https://docs.microsoft.com/en-us/azure/active-directory/ma
 
 Two scripts(PowerShell and Bash) inside `/key-vault/system-assigned` directory:
 
-* `getKeyVaultSecret.ps1` - Gets secret from key vault from **Windows VM**(or Linux VM if you have powershell installed on Linux). Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
-* `getKeyVaultSecret.sh` - Gets secret from key vault from **Linux VM**(or Linux VM if you have powershell installed on Linux). Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.sh https://myvault.vault.azure.net mySecret`. 
+* `getKeyVaultSecret.ps1` - Gets secret from key vault from **Windows VM**. Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
+* `getKeyVaultSecret.sh` - Gets secret from key vault from **Linux VM**. Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.sh https://myvault.vault.azure.net mySecret`. 
 
 ### User-Assigned
 
@@ -26,6 +26,6 @@ Have a look at [MSDN](https://docs.microsoft.com/en-us/azure/active-directory/ma
 
 Two scripts(PowerShell and Bash) inside `/key-vault/user-assigned` directory:
 
-* `getKeyVaultSecret.ps1` - Gets secret from key vault from **Windows VM**(or Linux VM if you have powershell installed on Linux). Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -CLientId myClientId -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
+* `getKeyVaultSecret.ps1` - Gets secret from key vault from **Windows VM**. Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -CLientId myClientId -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
 
-* `getKeyVaultSecret.sh` - Gets secret from key vault from **Linux VM**(or Linux VM if you have powershell installed on Linux). Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.sh myClientId https://myvault.vault.azure.net mySecret`. 
+* `getKeyVaultSecret.sh` - Gets secret from key vault from **Linux VM**. Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.sh myClientId https://myvault.vault.azure.net mySecret`. 
