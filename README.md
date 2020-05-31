@@ -1,6 +1,6 @@
 # Azure Managed Identity Scripts
 
-Some scripts I have written which are helpful when interacting with Managed Identities in Azure. 
+Some scripts I have written which are helpful when interacting with Managed Identities in Azure. This is a work in progress, and I'm using it for future reference. 
 
 The documentation at [MSDN](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) is a good starting point for managed identities, which is the best way to interact securly with Azure resources. 
 
@@ -17,8 +17,8 @@ Have a look at [MSDN](https://docs.microsoft.com/en-us/azure/active-directory/ma
 
 Two scripts inside `/key-vault/system-assigned` directory:
 
-* `getKeyVaultSecret.ps1` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in Key vault URL and secret name: `getKeyVaultSecret.ps1 -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
-* `getKeyVaultSecret.sh` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in Key vault URL and secret name: `getKeyVaultSecret.sh https://myvault.vault.azure.net mySecret`. 
+* `getKeyVaultSecret.ps1` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
+* `getKeyVaultSecret.sh` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in **key vault URL** and **secret name**: `getKeyVaultSecret.sh https://myvault.vault.azure.net mySecret`. 
 
 ### User-Assigned
 
@@ -26,6 +26,6 @@ Have a look at [MSDN](https://docs.microsoft.com/en-us/azure/active-directory/ma
 
 Two scripts inside `/key-vault/user-assigned` directory:
 
-* `getKeyVaultSecret.ps1` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in client id, Key vault URL and secret name: `getKeyVaultSecret.ps1 -CLientId myClientId -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
+* `getKeyVaultSecret.ps1` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.ps1 -CLientId myClientId -KeyVaultUrl https://myvault.vault.azure.net -SecretName mySecret`. 
 
-* `getKeyVaultSecret.sh` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in client id, Key vault URL and secret name: `getKeyVaultSecret.sh myClientId https://myvault.vault.azure.net mySecret`. 
+* `getKeyVaultSecret.sh` - Gets secret from keyvault from windows VM(or Linux VM if you have powershell installed on Linux). Need to pass in **client id**, **key vault URL** and **secret name**: `getKeyVaultSecret.sh myClientId https://myvault.vault.azure.net mySecret`. 
